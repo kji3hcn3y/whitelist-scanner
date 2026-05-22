@@ -58,7 +58,6 @@ jobs:
       - name: Build debug APK
         run: |
           cd $GITHUB_WORKSPACE
-          buildozer android clean
           buildozer -v android debug
 
       - name: Upload APK artifact
